@@ -34,7 +34,7 @@ h1 {
 
 /* header_NavBar */
 
-header {
+nav {
   width: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,6 +69,15 @@ header {
 .divMenu img {
   width: 10rem;
   height: 10rem;
+}
+
+.divMenu p:hover {
+  color: #D5E763;
+  cursor: pointer;
+}
+
+.divMenu img:hover {
+  cursor: pointer;
 }
 
 /* Drums Section*/
@@ -260,7 +269,7 @@ header {
   }
 
   html {
-    font-size: calc(10px * 0.8);
+    font-size: calc(10px * 0.7);
   }
 
   .desktopDrumsSection {
@@ -272,15 +281,19 @@ header {
     z-index: 1;
   }
 
-  header {
+  nav {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     border-bottom: none;
 
   }
 
   .divLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-right: 3rem;
     padding-left: 15rem;
     border-bottom: 0.2rem solid white;
@@ -294,20 +307,21 @@ header {
     font-size: 8rem;
     background-color: transparent;
     border: 0;
-  }
-
-  .divLogo button i {
-    color: #D5E763;
+    color: white;
   }
 
   .divMenu {
-    display: flex;
+    position: absolute;
+    top: 10.2rem;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 8rem;
     font-size: 3rem;
-    height: calc(100vh - 5.2rem);
+    width: 100%;
+    height: calc(100vh - 30.2rem);
+    padding: 5rem 0 15rem 0;
+    background-image: url("../Image/beautiful-shot-of-starry-night-sky.jpg");
+    background-size: cover;
   }
 
   .divMenu img {
@@ -344,16 +358,16 @@ header {
   }
 
   .mobileDrumsSection {
-    display: none;
+    display: grid;
     z-index: 1;
   }
 
 
-  header {
+  nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     border-bottom: none;
 
   }
@@ -376,16 +390,14 @@ header {
     font-size: 12rem;
     background-color: transparent;
     border: 0;
+    color: white;
   }
 
-  .divLogo button i {
-    color: #D5E763;
-  }
 
   .divMenu {
     position: absolute;
     top: 12.36rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     font-family: Mulish;
@@ -393,7 +405,10 @@ header {
     font-weight: 700;
     color: white;
     width: 100%;
-    height: calc(100vh - 12.36rem);
+    height: calc(100vh - 32.36rem);
+    padding: 5rem 0 15rem 0;
+    background-image: url("../Image/beautiful-shot-of-starry-night-sky.jpg");
+    background-size: cover;
   }
 
   .divMenu img {
