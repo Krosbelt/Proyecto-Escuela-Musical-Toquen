@@ -14,9 +14,13 @@ Er resultado final debera corresponder a los Mockups planteados, los cuales se e
 
 Como un ejemplo, así debe verse la secciòn correspondiente a el instrumento "Batería":
 
-| *Movil* | *Escritorio* |
+**Movil**
 
-| ![Mockup Movil](./Mockups/Movil/Drums_Movil.png) | ![Mockup Escritorio](./Mockups/Escritorio/DRUMS.png)
+![Mockup Movil](./Mockups/Movil/Drums_Movil.png)
+
+**Escritorio**
+
+![Mockup Escritorio](./Mockups/Escritorio/DRUMS.png)
 
 
 ## Requisitos Técnicos
@@ -28,13 +32,17 @@ Como un ejemplo, así debe verse la secciòn correspondiente a el instrumento "B
 * La página DEBE tener un diseño agradable, alusivo a la educación y a la múscia y responsive.
 * Los break points son:
 
- /* Small (sm) */ @media (min-width: 640px) { /\* ... \*/ }
+```css
 
- /* Medium (md) */ @media (min-width: 768px) { /\* ... \*/ }
+ /* Small (sm) */ @media (min-width: 640px) {...}
+
+ /* Medium (md) */ @media (min-width: 768px) {...}
  
- /* Large (lg) */ @media (min-width: 1024px) { /\* ... \*/ }
+ /* Large (lg) */ @media (min-width: 1024px) {...}
  
- /* Extra Large (xl) */ @media (min-width: 1280px) { /\* ... \*/ }
+ /* Extra Large (xl) */ @media (min-width: 1280px) {...} 
+
+ ```
  
 * La página debe tener un instrumento a elegir entre piano, batería, y la marimba.
 * El diseño del instrumento es de libre elección, se pueden diseñar los componentes aparte o utilizar recursos externos, si se utilizan recursos externos deben ser gratis, no se permite el plagio.
