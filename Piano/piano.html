@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+
+    <link rel="stylesheet" href="../CSS/piano.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script defer src="../JS/piano-uno.js"></script>
+</head>
+<body>
+    <nav  class="nav">
+        <div class="menu-nav">
+            <a href="#inicio" class="logo">Toquen el Dom</a>
+            <button class="open-menu" aria-label="Abrir Menú">
+                <img src="../IMG/hamburger-icon.svg" alt="">
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar Menú">
+                    <img src="../IMG/hamburger-icon.svg" alt="">
+                </button>
+                <li>
+                    <a href="../html/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../html/bateria.html">
+                        <img src="../IMG/bateria-blanco-negro.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../IMG/piano-hover.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/marimba.html">
+                        <img src="../IMG/marimba-negro-blanco.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+    <main>
+        <section class="teclas">
+            
+            <div>
+                <h1 style="font-size: 5rem;">¿Como tocarlo?</h1>
+            </div>
+
+            <div class="piano">
+                <div data-note="C" class="key white"></div>
+                <div data-note="Db" class="key black"></div>
+                <div data-note="D" class="key white"></div>
+                <div data-note="Eb" class="key black"></div>
+                <div data-note="E" class="key white"></div>
+                <div data-note="F" class="key white"></div>
+                <div data-note="Gb" class="key black"></div>
+                <div data-note="G" class="key white"></div>
+                <div data-note="Ab" class="key black"></div>
+                <div data-note="A" class="key white"></div>
+                <div data-note="Bb" class="key black"></div>
+                <div data-note="B" class="key white"></div>
+              </div>
+
+        </section>
+
+        <Section>
+            
+        </Section>
+
+        <audio id="C" src="../sounds/notes_C.mp3"></audio>
+        <audio id="Db" src="../sounds/notes_Db.mp3"></audio>
+        <audio id="D" src="../sounds/notes_D.mp3"></audio>
+        <audio id="Eb" src="../sounds/notes_Eb.mp3"></audio>
+        <audio id="E" src="../sounds/notes_E.mp3"></audio>
+        <audio id="F" src="../sounds/notes_F.mp3"></audio>
+        <audio id="Gb" src="../sounds/notes_Gb.mp3"></audio>
+        <audio id="G" src="../sounds/notes_G.mp3"></audio>
+        <audio id="Ab" src="../sounds/notes_Ab.mp3"></audio>
+        <audio id="A" src="../sounds/notes_A.mp3"></audio>
+        <audio id="Bb" src="../sounds/notes_Bb.mp3"></audio>
+        <audio id="B" src="../sounds/notes_B.mp3"></audio>
+    </main>
+
+    <script defer src="../JS/piano.js"></script>
+</body>
+</html>
