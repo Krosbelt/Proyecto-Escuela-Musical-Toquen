@@ -8,6 +8,17 @@ En este repositorio se encuentra en codigo de una página web para una una escue
 
 Por medio de EventListeners se agragaron las interacciones con las teclas de los intrumentos, ya que emitiran sonidos acorde al instrumento cuando se haga click con el mouse o se presionen ciertas teclas en el teclado fisico del pc.
 
+**Resultados esperados**
+
+Er resultado final debera corresponder a los Mockups planteados, los cuales se encuentran en la carpeta [Mockups](./Mockups).
+
+Como un ejemplo, así debe verse la secciòn correspondiente a el instrumento "Batería":
+
+| *Movil* | *Escritorio* |
+
+| ![Mockup Movil](./Mockups/Movil/Drums_Movil.png) | ![Mockup Escritorio](./Mockups/Escritorio/DRUMS.png)
+
+
 ## Requisitos Técnicos
 
 * El proyecto DEBE implementar metodología SCRUM.
@@ -16,6 +27,7 @@ Por medio de EventListeners se agragaron las interacciones con las teclas de los
 * Se DEBE utilizar GitFlow.
 * La página DEBE tener un diseño agradable, alusivo a la educación y a la múscia y responsive.
 * Los break points son:
+
  /* Small (sm) */ @media (min-width: 640px) { /\* ... \*/ }
 
  /* Medium (md) */ @media (min-width: 768px) { /\* ... \*/ }
