@@ -90,6 +90,6 @@ Como un ejemplo, así debe verse la secciòn correspondiente a el instrumento "B
 
 ## Autors
 
-Karen Rosales <a href="" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="angie pérez" height="30" width="40"/></a>
+Karen Rosales <a href="https://www.linkedin.com/in/karen-vanesa-rosales-beltran-88b042168/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="angie pérez" height="30" width="40"/></a>
 
 Jymmy Murillo Bernal <a href="https://www.linkedin.com/in/murillojymmy/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="angie pérez" height="30" width="40"/></a>
