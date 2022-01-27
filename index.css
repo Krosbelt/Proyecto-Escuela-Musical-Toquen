@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-letra);
+}
+
+h1, h3, p, a{
+    font-family: var(--letra-titulos-parrafos);
+    text-align: center;
+}
+:root{
+    --black-background : black;
+    --color-letra : white;
+    --logo-toquen : 'Mansalva', cursive;
+    --letra-titulos-parrafos : 'Mulish', sans-serif;
+    --letra-hoover: #D5E763;
+}
+
+
+
+html {
+    font-size: 10px;
+}
+
+.menu-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--black-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-nav > a, ul {
+    flex-wrap: wrap;
+}
+
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav .menu a {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 0px 2rem;
+} 
+
+.menu-nav .logo {
+    font-family: var(--logo-toquen);
+    font-size: 3rem;
+}
+
+.menu  li.active a {
+    color: var(--letra-hoover) ;
+    border-bottom: 1px solid var(--letra-hoover);
+    width: 100%;
+    height: 4px;
+    top: 100%;
+}
+
+.container-inicio {
+    width: 100%;
+    height: 100vh;
+    background: url("./Image/background-inicio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.container-inicio h1, h3 {
+    color: var(--color-letra);
+}
+
+.container-inicio h1 {
+    font-size: 10rem;
+}
+
+.container-inicio h3 {
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+#metodologia{
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#metodologia h1{
+    font-size: 8rem;
+    line-height: 19rem;
+}
+
+#metodologia p{
+    font-size: 2rem;
+    line-height: 3rem;
+} 
+
+#practica {
+   
+    color: var(--color-letra);
+}
+
+.container-practica {
+    width: 100%;
+    min-height: (100vh -8rem);
+    background: url("./Image/background-practica.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.container-practica .texto{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-size: 5rem;
+    padding-top: 4rem;
+}
+
+.container-uno h1 {
+
+    color: var(--color-letra);
+    font-size: 5rem;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   width: 100%;;
+    flex-wrap: wrap;
+} 
+
+.box-one, .box-two, .box-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+
+}
+
+.boxes h3 {
+    font-size: 3rem;
+}
+
+
+.bateria {
+    background-image: url("./Image/Bateria.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 30rem;
+    height: 50rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bateria button {
+    padding: 1rem 4rem;
+    background: white;
+    border: none;
+    border-radius: 40px;
+}
+
+.bateria button a{
+    font-family: var(--logo-toquen);
+    font-size: 2rem;
+    color: black;
+}
+
+.bateria button:hover {
+    background: var(--letra-hoover);
+}
+
+.piano {
+    background-image: url("./Image/piano.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 30rem;
+    height: 50rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano button {
+    padding: 1rem 4rem;
+    background: white;
+    border: none;
+    border-radius: 40px;
+}
+
+.piano button a{
+    font-family: var(--logo-toquen);
+    font-size: 2rem;
+    color: black;
+}
+
+.piano button:hover {
+    background: var(--letra-hoover);
+}
+
+
+
+.marimba {
+    background-image: url("./Image/Marimba.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 30rem;
+    height: 50rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marimba button {
+    padding: 1rem 4rem;
+    background: white;
+    border: none;
+    border-radius: 40px;
+}
+
+.marimba button a{
+    font-family: var(--logo-toquen);
+    font-size: 2rem;
+    color: black;
+}
+
+.marimba button:hover {
+    background: var(--letra-hoover);
+}
+
+
+#practica .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.social-media .media {
+    width: 5rem;
+    height: 5rem;
+}
+
+#practica p{
+    color: var(--color-letra);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+/*******************Responsive******************/
+
+/*Desktop Responsive*/
+
+
+@media (min-width: 1200px) and (max-width: 1439px){
+    .menu-nav .menu a {
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 0px 2rem;
+    }  
+
+    .menu-nav .logo {
+        font-family: var(--logo-toquen);
+        font-size: 4rem;
+    }
+
+    #metodologia p {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .menu-nav .menu a {
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 0px 2rem;
+    }  
+}    
+
+/* Mobile Responsive */
+
+@media (min-width: 360px) and (max-width: 767px){
+    .menu-nav {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+        height: 7rem;
+    }
+
+    .menu-nav .menu a {
+        font-size: 1.5rem;
+    } 
+
+    .menu-nav .logo {
+        font-size: 2rem;
+    }
+
+    .menu-nav h1 {
+        font-size: 6rem;
+    }
+    
+    .menu-nav h3 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .container-inicio h1 {
+        font-size: 5rem;
+    }
+    
+    .container-inicio h3 {
+        font-size: 3rem;
+    }
+
+    #metodologia h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    #metodologia p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .container-practica .texto{
+        font-size: 2rem;
+        padding-top: 6rem;
+    }
+    
+    .boxes {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 100%;
+    }
+
+    .boxes h3{
+        font-size: 2rem;
+    }
+
+    .box-one, .box-two, .box-three {
+        row-gap: 1rem;
+    }
+
+    .bateria {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    .piano {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    .marimba {
+        width: 20rem;
+        height: 25rem;
+    }
+
+        
+    .social-media .media {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #practica p{
+        font-size: 1rem;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-nav {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+        height: 9rem;
+    }
+
+    #metodologia h1{
+        font-size: 5rem;
+        line-height: 14rem;
+    }
+    
+    .bateria {
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .piano {
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .marimba {
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .container-practica .texto{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        font-size: 3rem;
+        padding-top: 6rem;
+    }
+    
+    
+}
