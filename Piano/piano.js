@@ -1,3 +1,4 @@
+//Declarar constantes
 const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
 const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
 
@@ -19,6 +20,7 @@ function playNote(key) {
     })
 }
 
+//Teclado
 document.addEventListener('keydown', e => {
     if (e.repeat) return
     const key = e.key
