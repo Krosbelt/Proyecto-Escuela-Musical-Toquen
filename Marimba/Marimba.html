@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Marimba</title>
+  <link rel="stylesheet" href="./Marimba.css">
+  <link rel="stylesheet" href="../Drums/Drums.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&family=Tillana&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Mulish:wght@200;500;900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <p> adios</p>
+  <nav>
+    <div class="divLogo">
+      <h1>Toquen el DOM</h1>
+      <button id="menuBtn" onclick="functionMenuBtn()"><i class="bi bi-list"></i></button>
+    </div>
+
+    <div class="divMenu" id="divMenu">
+      <a href="../index.html">Inicio</a>
+      <a href="../Drums/Drums.html"><img id="bateria" onmouseout="imgDrumsDefault()" onmouseover="imgDrumsHover()"
+          src="../Image/bateria-blanco-negro.png" alt="Bateria"></a>
+      <a href="../Marimba/Marimba.html"><img id="marimba" src="../Image/marimba-hover.png" alt="Marimba"></a>
+
+      <a href="../Piano/piano.html"><img id="piano" onmouseout="imgPianoDefault()" onmouseover="imgPianoHover()"
+          src="../Image/piano-blanco-negro.png" alt="Piano"></a>
+
+    </div>
+  </nav>
+
+  <section>
+    <h1>Este instrumento sigue en desarrollo, lo podrás ver próximamente.</h1>
+  </section>
+
+  <script src="./Marimba.js"></script>
+
 </body>
+
 </html>

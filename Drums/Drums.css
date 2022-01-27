@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-image: url("../Image/beautiful-shot-of-starry-night-sky.jpg");
+  background-image: url("../Image/background-practica.jpeg");
   background-size: cover;
 }
 
@@ -63,6 +63,10 @@ nav {
   font-family: Mulish;
   font-size: 5rem;
   font-weight: 700;
+}
+
+.divMenu a {
+  text-decoration: none;
   color: white;
 }
 
@@ -71,7 +75,7 @@ nav {
   height: 10rem;
 }
 
-.divMenu p:hover {
+.divMenu a:hover {
   color: #D5E763;
   cursor: pointer;
 }
@@ -81,6 +85,8 @@ nav {
 }
 
 /* Drums Section*/
+
+
 
 .desktopDrumsSection {
   display: grid;
@@ -135,12 +141,21 @@ nav {
 
 .yellowDrums {
   background-color: #EFB810;
-
 }
 
 .greyDrums {
   background-color: #4F4B3F;
   border: 0.1rem solid #D0CFCD;
+}
+
+.scale {
+  transform: scale(0.8);
+}
+
+.yellowDrums:hover,
+.greyDrums:hover {
+  cursor: pointer;
+  /*transform: scale(0.9);*/
 }
 
 .redInternalBorder {
@@ -204,6 +219,15 @@ nav {
   display: none;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: calc(100vh - 12rem);
+}
+
+.yellowSmallDrums {
+  background-color: #EFB810;
+}
+
+.greySmallDrums {
+  background-color: #4F4B3F;
+  border: 0.1rem solid #D0CFCD;
 }
 
 .divFirstRowDrums {
@@ -320,18 +344,19 @@ nav {
     width: 100%;
     height: calc(100vh - 30.2rem);
     padding: 5rem 0 15rem 0;
-    background-image: url("../Image/beautiful-shot-of-starry-night-sky.jpg");
+    background-image: url("../Image/background-practica.jpeg");
     background-size: cover;
+    z-index: 3;
   }
 
   .divMenu img {
-    border: 0.12em solid white;
+    
     width: 20rem;
     height: 20rem;
     padding: 1.2rem 8.2rem 1.2rem 8.2rem
   }
 
-  .divMenu p {
+  .divMenu a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,8 +432,9 @@ nav {
     width: 100%;
     height: calc(100vh - 32.36rem);
     padding: 5rem 0 15rem 0;
-    background-image: url("../Image/beautiful-shot-of-starry-night-sky.jpg");
+    background-image: url("../Image/background-practica.jpeg");
     background-size: cover;
+    z-index: 10;
   }
 
   .divMenu img {
@@ -419,7 +445,7 @@ nav {
     padding: 2.16rem 14.76rem 2.16rem 14.76rem
   }
 
-  .divMenu p {
+  .divMenu a {
     display: flex;
     align-items: center;
     justify-content: center;

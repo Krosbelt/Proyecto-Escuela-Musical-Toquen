@@ -20,17 +20,10 @@ h1, h3, p, a{
     --letra-hoover: #D5E763;
 }
 
+
+
 html {
     font-size: 10px;
-}
-
-.menu  li.active {
-    
-    transition: 0.3 ease background-color;
-}
-
-.menu  li.active a {
-    color: var(--letra-hoover) ;
 }
 
 .menu-nav {
@@ -68,10 +61,18 @@ html {
     font-size: 3rem;
 }
 
+.menu  li.active a {
+    color: var(--letra-hoover) ;
+    border-bottom: 1px solid var(--letra-hoover);
+    width: 100%;
+    height: 4px;
+    top: 100%;
+}
+
 .container-inicio {
     width: 100%;
     height: 100vh;
-    background: url(../IMG/background-inicio.jpg);
+    background: url(image/background-inicio.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +121,7 @@ html {
 .container-practica {
     width: 100%;
     min-height: (100vh -8rem);
-    background: url(../IMG/background-practica.jpeg);
+    background: url(image/background-practica.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +163,7 @@ html {
 
 
 .bateria {
-    background-image: url(../IMG/bateria.png);
+    background-image: url(image/Bateria.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -193,7 +194,7 @@ html {
 }
 
 .piano {
-    background-image: url(../IMG/piano.png);
+    background-image: url(image/piano.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -226,7 +227,7 @@ html {
 
 
 .marimba {
-    background-image: url(../IMG/marimba.png);
+    background-image: url(image/Marimba.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -275,8 +276,40 @@ html {
     font-size: 2rem;
 }
 
+/*******************Responsive******************/
 
-@media only screen and (max-width: 950px){
+/*Desktop Responsive*/
+
+
+@media (min-width: 1200px) and (max-width: 1439px){
+    .menu-nav .menu a {
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 0px 2rem;
+    }  
+
+    .menu-nav .logo {
+        font-family: var(--logo-toquen);
+        font-size: 4rem;
+    }
+
+    #metodologia p {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .menu-nav .menu a {
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 0px 2rem;
+    }  
+}    
+
+/* Mobile Responsive */
+
+@media (min-width: 360px) and (max-width: 767px){
     .menu-nav {
         display: grid;
         grid-template-columns: auto;
@@ -364,3 +397,42 @@ html {
         font-size: 1rem;
     }
 } 
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-nav {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+        height: 9rem;
+    }
+
+    #metodologia h1{
+        font-size: 5rem;
+        line-height: 14rem;
+    }
+    
+    .bateria {
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .piano {
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .marimba {
+        width: 23rem;
+        height: 25rem;
+    }
+
+    .container-practica .texto{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        font-size: 3rem;
+        padding-top: 6rem;
+    }
+    
+    
+}
