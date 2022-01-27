@@ -190,14 +190,89 @@ tr:hover {
 
 /*Desktop Responsive*/
 
-
-/* @media (min-width: 1200px) and (max-width: 1439px){
+/* 
+ @media (min-width: 1200px) and (max-width: 1439px){
   
-}
+} */
 
 @media (min-width: 1024px) and (max-width: 1199px) {
+  .menu li img {
+    padding: 0px 1rem;
+}
+
+  .logo{
+    font-size: 6rem;
+  }
+
+  .teclas{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10rem;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: center;
+   
+  }
   
-}     */
+  .texto-exp {
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: var(--color-letra);
+      
+  }
+
+  .white {
+    --width: 10rem;
+    background-color: var(--teclas-white);
+    border: 1px solid var(--teclas-border);
+    border-radius: 0px 0 20px 20px;
+}
+
+.white.active {
+    background-color: #ccc;
+}
+
+.black {
+    --width: 5rem;
+    background-color: var(--black-background);
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+    border-radius: 0px 0 20px 20px;
+}   
+
+.black.active {
+    background-color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 25rem;
+  font-size: 3rem;
+}
+
+.tables {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  column-gap: 2rem;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #D6EEEE;
+  color: black;
+}
+}  
 
 /* Mobile Responsive */
 
@@ -233,7 +308,7 @@ tr:hover {
 
 main {
   width: 100%;
-  min-height: 140vh;
+  min-height: 100vh;
 } 
 .white {
   --width: 7rem;
@@ -273,8 +348,6 @@ table {
   flex-direction: row;
   justify-content: baseline;
   column-gap: 8rem;
-  
-  
   align-items: baseline;
 }
 
