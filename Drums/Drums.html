@@ -27,10 +27,11 @@
 
     <div class="divMenu" id="divMenu">
       <p>Inicio</p>
-      <img src="../Image/greenBateria.png" alt="Bateria">
-      <img id="marimba" onmouseout="imgMarimbaDefault()" onmouseover="imgMarimbaHover()" src="../Image/Marimba.png"
-        alt="Marimba">
-      <img id="piano" onmouseout="imgPianoDefault()" onmouseover="imgPianoHover()" src="../Image/piano.png" alt="Piano">
+      <img src="../Image/bateria-hover.svg" alt="Bateria">
+      <img id="marimba" onmouseout="imgMarimbaDefault()" onmouseover="imgMarimbaHover()"
+        src="../Image/marimba-negro-blanco.png" alt="Marimba">
+      <img id="piano" onmouseout="imgPianoDefault()" onmouseover="imgPianoHover()" src="../Image/piano-blanco-negro.png"
+        alt="Piano">
     </div>
 
 
@@ -38,160 +39,200 @@
 
   <!-- Drums Section -->
   <section>
-    <audio id="aPrueba">
-      <source src="./Songs/PruebaAudio.mp3" type="audio/mpeg">
+    <!-- Audios -->
+    <audio id="crash1">
+      <source src="./Songs/crash1.wav" type="audio/wav">
     </audio>
-    <div class="desktopDrumsSection">
+    <audio id="crash2">
+      <source src="./Songs/crash2.wav" type="audio/wav">
+    </audio>
+    <audio id="splash">
+      <source src="./Songs/splash.wav" type="audio/wav">
+    </audio>
+    <audio id="closeHH">
+      <source src="./Songs/closeHH.wav" type="audio/wav">
+    </audio>
+    <audio id="tom1">
+      <source src="./Songs/tom1.wav" type="audio/wav">
+    </audio>
+    <audio id="tom2">
+      <source src="./Songs/tom2.wav" type="audio/wav">
+    </audio>
+    <audio id="tom3">
+      <source src="./Songs/tom3.wav" type="audio/wav">
+    </audio>
+    <audio id="ride">
+      <source src="./Songs/ride.wav" type="audio/wav">
+    </audio>
+    <audio id="openHH">
+      <source src="./Songs/openHH.wav" type="audio/wav">
+    </audio>
+    <audio id="kick1">
+      <source src="./Songs/kick1.wav" type="audio/wav">
+    </audio>
+    <audio id="kick2">
+      <source src="./Songs/kick2.wav" type="audio/wav">
+    </audio>
+    <audio id="snare">
+      <source src="./Songs/snare.wav" type="audio/wav">
+    </audio>
+    <audio id="floor">
+      <source src="./Songs/floor.wav" type="audio/wav">
+    </audio>
+
+    <!-- Drums -->
+    <div id="desktopDrums" class="desktopDrumsSection">
       <div class="divTopDrums">
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="crash1" class="divSmallDrums yellowDrums">
           <div class="redInternalBorder">
             <p>CRASH</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums" onclick="play()">
+        <div data-Btn="splash" class="divSmallDrums yellowDrums">
           <div class="redInternalBorder">
             <p>SPLASH</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="crash2" class="divSmallDrums yellowDrums">
           <div class="redInternalBorder">
             <P>CRASH</P>
           </div>
         </div>
       </div>
       <div class="divMiddleDrums">
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="closeHH" class="divSmallDrums yellowDrums">
           <div class="redInternalBorder">
             <P>CLOSE HH</P>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="tom1" class="divSmallDrums greyDrums">
           <div class="greenInternalBorder">
             <p>TOM</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="tom2" class="divSmallDrums greyDrums">
           <div class="greenInternalBorder">
             <p>TOM</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="tom3" class="divSmallDrums greyDrums">
           <div class="greenInternalBorder">
             <p>TOM</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="ride" class="divSmallDrums yellowDrums">
           <div class="redInternalBorder">
             <P>RIDE</P>
           </div>
         </div>
       </div>
-      <di class="divBottomDrums">
-        <div class="divSmallDrums yellowDrums">
+      <div class="divBottomDrums">
+        <div data-Btn="openHH" class="divSmallDrums yellowDrums">
           <div class="redInternalBorder">
             <P>OPEN HH</P>
           </div>
         </div>
-        <div class="divBigDrums greyDrums">
+        <div data-Btn="kick1" class="divBigDrums greyDrums">
           <div class="greyBigInternalCircle">
             <p>KICK</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="snare" class="divSmallDrums greyDrums">
           <div class="greSmallInternalCircle">
             <p>SNARE</p>
           </div>
         </div>
-        <div class="divBigDrums greyDrums">
+        <div data-Btn="kick2" class="divBigDrums greyDrums">
           <div class="greyBigInternalCircle">
             <p>KICK</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="floor" class="divSmallDrums greyDrums">
           <div class="greenInternalBorder">
             <p>FLOOR</p>
           </div>
         </div>
+      </div>
     </div>
 
     <div class="mobileDrumsSection">
       <div class="divFirstRowDrums">
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="crash1" class="divSmallDrums yellowSmallDrums">
           <div class="redInternalBorder">
             <p>CRASH</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums" onclick="play()">
+        <div data-Btn="splash" class="divSmallDrums yellowSmallDrums" onclick="play()">
           <div class="redInternalBorder">
             <p>SPLASH</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="crash2" class="divSmallDrums yellowSmallDrums">
           <div class="redInternalBorder">
             <P>CRASH</P>
           </div>
         </div>
       </div>
       <div class="divSecondRowDrums">
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="openHH" class="divSmallDrums yellowSmallDrums">
           <div class="redInternalBorder">
             <p>OPEN HH</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="closeHH" class="divSmallDrums yellowSmallDrums">
           <div class="redInternalBorder">
             <p>CLOSE HH</p>
           </div>
         </div>
-        <div class="divSmallDrums yellowDrums">
+        <div data-Btn="ride" class="divSmallDrums yellowSmallDrums">
           <div class="redInternalBorder">
             <P>RIDE</P>
           </div>
         </div>
       </div>
       <div class="divThirdRowDrums">
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="tom1" class="divSmallDrums greySmallDrums">
           <div class="greenInternalBorder">
             <p>TOM</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="tom2" class="divSmallDrums greySmallDrums">
           <div class="greenInternalBorder">
             <p>TOM</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="tom3" class="divSmallDrums greySmallDrums">
           <div class="greenInternalBorder">
             <p>TOM</p>
           </div>
         </div>
       </div>
       <div class="divFourthRowDrums">
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="snare" class="divSmallDrums greySmallDrums">
           <div class="greSmallInternalCircle">
             <p>SNARE</p>
           </div>
         </div>
-        <div class="divSmallDrums greyDrums">
+        <div data-Btn="floor" class="divSmallDrums greySmallDrums">
           <div class="greenInternalBorder">
             <p>FLOOR</p>
           </div>
         </div>
       </div>
       <div class="divFifthRowDrums">
-        <div class="divBigDrums greyDrums">
+        <div data-Btn="kick1" class="divBigDrums greySmallDrums">
           <div class="greyBigInternalCircle">
             <p>KICK</p>
           </div>
         </div>
-        <div class="divBigDrums greyDrums">
+        <div data-Btn="kick2" class="divBigDrums greySmallDrums">
           <div class="greyBigInternalCircle">
             <p>KICK</p>
           </div>
         </div>
       </div>
     </div>
-    </div>
+
 
 
   </section>
