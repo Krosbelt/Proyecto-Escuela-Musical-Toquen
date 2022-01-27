@@ -27,54 +27,6 @@
   
   /* header_NavBar */
   
-  .topnav {
-    display: flex;
-    justify-content: space-between;
-    background: url(../image/background-practica.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 3px white solid;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.logo {
-    color: var(--color-letra);
-    font-size: 8rem;
-    font-family: var(--logo-toquen);
-    padding-left: 5rem;
-    text-decoration: none;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    font-weight: 700;
-    color: white;
-    list-style: none;
-}
-
-.menu li img {
-    padding: 0 5rem;
-}
-
-.menu img {
-    width: 10rem;
-  height: 10rem;
-}
-
-.menu a{
-    font-size: 5rem;
-    list-style: none;
-    text-decoration: none;
-    color: var(--color-letra);
-    font-family: var(--letra-titulos-parrafos);
-}
 
   main {
     width: 100%;
@@ -196,13 +148,6 @@ tr:hover {
 } */
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-  .menu li img {
-    padding: 0px 1rem;
-}
-
-  .logo{
-    font-size: 6rem;
-  }
 
   .teclas{
     display: flex;
@@ -277,35 +222,6 @@ tr:hover {
 /* Mobile Responsive */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .logo {
-    font-size: 3rem;
-    padding-left: 5rem;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 4rem;
-}
-
-.menu li img {
-    padding: 0 5rem;
-}
-
-.menu img {
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
-}
-
-.menu a{
-    font-size: 2rem;
-}
-
 main {
   width: 100%;
   min-height: 100vh;
@@ -362,36 +278,6 @@ th, td {
 }
 
 @media (min-width: 360px) and (max-width: 767px){
-  
-  .logo {
-      font-size: 2rem;
-      padding-left: 5rem;
-  }
-
-  .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      top: 4rem;
-  }
-
-  .menu li img {
-      padding: 0 5rem;
-  }
-
-  .menu img {
-      width: 5rem;
-      height: 5rem;
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      align-items: center;
-  }
-
-  .menu a{
-      font-size: 2rem;
-  }
-
   main {
     width: 100%;
     min-height: 110vh;

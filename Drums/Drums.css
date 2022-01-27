@@ -63,6 +63,10 @@ nav {
   font-family: Mulish;
   font-size: 5rem;
   font-weight: 700;
+}
+
+.divMenu a {
+  text-decoration: none;
   color: white;
 }
 
@@ -71,7 +75,7 @@ nav {
   height: 10rem;
 }
 
-.divMenu p:hover {
+.divMenu a:hover {
   color: #D5E763;
   cursor: pointer;
 }
@@ -342,16 +346,17 @@ nav {
     padding: 5rem 0 15rem 0;
     background-image: url("../Image/background-practica.jpeg");
     background-size: cover;
+    z-index: 3;
   }
 
   .divMenu img {
-    border: 0.12em solid white;
+    
     width: 20rem;
     height: 20rem;
     padding: 1.2rem 8.2rem 1.2rem 8.2rem
   }
 
-  .divMenu p {
+  .divMenu a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -429,6 +434,7 @@ nav {
     padding: 5rem 0 15rem 0;
     background-image: url("../Image/background-practica.jpeg");
     background-size: cover;
+    z-index: 10;
   }
 
   .divMenu img {
@@ -439,7 +445,7 @@ nav {
     padding: 2.16rem 14.76rem 2.16rem 14.76rem
   }
 
-  .divMenu p {
+  .divMenu a {
     display: flex;
     align-items: center;
     justify-content: center;

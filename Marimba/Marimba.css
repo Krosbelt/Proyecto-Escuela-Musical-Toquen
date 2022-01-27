@@ -1,0 +1,13 @@
+
+
+section {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  color: white;
+}
+
+section h1 {
+  margin-top: 10%;
+  text-align: center;
+}
